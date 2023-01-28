@@ -1,0 +1,93 @@
+@use '../../sass/abstracts' as *;
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 75vh;
+  h2 {
+    color: $primary-color-100;
+  }
+}
+.alert {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(160deg, 13%, 33%, 0.6);
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 24px;
+}
+
+label {
+  color: $primary-color-400;
+
+  margin-bottom: 8px;
+}
+select {
+  background-color: $primary-color-300;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.custom-select {
+  width: 100%;
+
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  background-color: $primary-color-300;
+  margin-bottom: 24px;
+}
+input {
+  display: block;
+  width: 100%;
+
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+input:focus {
+  border: 1px solid $primary-color-400;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: $primary-color-200;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: $primary-color-400;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+
+  text-transform: uppercase;
+}
+
+@include breakpoint-up(medium) {
+  .box {
+    padding: 16px 140px;
+  }
+}
+@include breakpoint-up(large) {
+  .box {
+    padding: 16px 340px;
+  }
+}
+@include breakpoint-up(xlarge) {
+  .box {
+    padding: 16px 440px;
+  }
+}
