@@ -1,0 +1,24 @@
+@use '../../sass/abstracts' as *;
+
+.testimonial-section {
+  text-align: center;
+  background-color: hsla(160, 13%, 33%, 0.6);
+  margin-top: 40px;
+  margin-bottom: 76px;
+  .testimonial-title {
+    margin-bottom: 66px;
+    color: $primary-color-400;
+  }
+  .testimonial-cards-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 154px;
+  }
+}
+@include breakpoint-up(medium) {
+  .testimonial-section {
+    .testimonial-cards-container {
+      flex-direction: row;
+    }
+  }
+}
