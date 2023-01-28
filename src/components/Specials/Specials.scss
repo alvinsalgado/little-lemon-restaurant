@@ -1,0 +1,92 @@
+@use '../../sass/abstracts' as *;
+
+.specials-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+  .specials-title {
+    text-align: center;
+    color: $primary-color-400;
+  }
+}
+.specials-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+}
+.specials-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $highlight-color-100;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  flex: 1;
+  height: 460px;
+
+  &:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+.specials-img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: 240px;
+  width: 100%;
+}
+.specials-card-info {
+  padding: 20px 25px;
+}
+
+.specials-card-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  .specials-price {
+    color: $secondary-color-100;
+  }
+}
+.specials-body {
+  margin-bottom: 16px;
+  text-align: left;
+}
+.specials-order {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  h4 {
+    margin-right: 4px;
+  }
+  img {
+    width: 25px;
+  }
+}
+
+@include breakpoint-up(medium) {
+  .specials-heading {
+    flex-direction: row;
+  }
+  .specials-cards-container {
+    flex-direction: row;
+  }
+  .specials-card {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+  }
+}
+@include breakpoint-up(large) {
+  .specials-card {
+    &:not(:last-child) {
+      margin-right: 64px;
+    }
+  }
+}
