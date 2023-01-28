@@ -1,0 +1,122 @@
+// @use './formula' as *;
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/formula' as *;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap');
+
+h1,
+h2,
+h3 {
+  font-family: 'Markazi Text', serif;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: 'Karla', sans-serif;
+}
+h1 {
+  font-size: rem(64);
+  line-height: rem(77);
+  font-weight: 500;
+  color: $primary-color-200;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(80);
+    line-height: rem(80);
+    letter-spacing: -0.5px;
+  }
+}
+
+h2 {
+  font-size: rem(40);
+  line-height: rem(48);
+  font-weight: 400;
+  color: $highlight-color-100;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(50);
+    line-height: rem(60);
+  }
+}
+
+h3 {
+  font-size: rem(20);
+  line-height: rem(22);
+  font-weight: 500;
+  color: $primary-color-400;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(24);
+  }
+}
+
+h4 {
+  font-size: rem(16);
+  line-height: rem(19);
+  font-weight: 700;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(16);
+    line-height: rem(19);
+  }
+}
+
+h5 {
+  font-size: rem(14);
+  line-height: rem(16);
+  font-weight: 700;
+  color: $primary-color-400;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(15);
+    line-height: rem(19);
+  }
+}
+
+h6 {
+  font-size: rem(16);
+  line-height: rem(19);
+  font-weight: 400;
+  color: $primary-color-100;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(13);
+    line-height: rem(16);
+  }
+}
+/*
+------------------------------- PARAGRAPH ---------------------------
+*/
+label,
+p {
+  font-size: rem(18);
+  line-height: rem(21);
+  font-weight: 500;
+  color: $primary-color-300;
+
+  @include breakpoint-up(medium) {
+    font-size: rem(20);
+    line-height: rem(28);
+  }
+}
+
+/*
+------------------------------- LINKS ---------------------------
+*/
+button,
+a {
+  font-size: rem(16);
+  line-height: rem(19);
+  font-weight: 700;
+  color: $primary-color-400;
+}
+
+li {
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: rem(26);
+}
