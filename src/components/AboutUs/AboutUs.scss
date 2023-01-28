@@ -1,0 +1,59 @@
+@use '../../sass/abstracts' as *;
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  > div {
+    flex: 1;
+  }
+}
+.about-info {
+  margin-right: 49px;
+  h2 {
+    color: $primary-color-400;
+  }
+  h3 {
+    margin-bottom: 40px;
+  }
+  p {
+    color: $primary-color-400;
+    margin-bottom: 40px;
+  }
+}
+.about-images {
+  .about-image2 {
+    display: none;
+  }
+}
+@include breakpoint-up(medium) {
+  .about-section {
+    flex-direction: row;
+  }
+  .about-images {
+    position: relative;
+    img {
+      position: absolute;
+      width: 270px;
+      height: 335px;
+      object-fit: cover;
+    }
+    .about-image1 {
+      bottom: 0;
+    }
+    .about-image2 {
+      display: block;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+@include breakpoint-up(medium) {
+  .about-images {
+    height: 470px;
+    img {
+      width: 65%;
+    }
+  }
+}
