@@ -1,0 +1,44 @@
+@use '../../sass/abstracts' as *;
+
+.testimonial-card {
+  padding: 29px 24px;
+  background-color: $primary-color-300;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.testimonial-rating {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 13px;
+  h5 {
+    margin-right: 12px;
+  }
+  .star {
+    width: 20px;
+  }
+}
+.testimonial-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+  }
+}
+.testimonial-review {
+  font-weight: 400;
+  text-align: left;
+}
+@include breakpoint-up(medium) {
+  .testimonial-card {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+}
