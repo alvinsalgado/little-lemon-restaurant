@@ -1,0 +1,27 @@
+@use '../../sass/abstracts' as *;
+
+.confirm-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+}
+.confirm-heading {
+  color: $primary-color-100;
+  margin-bottom: 32px;
+}
+.confirm-box {
+  width: 100%;
+
+  background-color: hsla(160deg, 13%, 33%, 0.6);
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 400px;
+}
+.confirm-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
