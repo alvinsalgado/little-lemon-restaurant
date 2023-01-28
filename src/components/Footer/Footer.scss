@@ -1,0 +1,39 @@
+@use '../../sass/abstracts' as *;
+
+.footer-section {
+  background-color: hsla(160, 13%, 33%, 0.6);
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  img {
+    width: 100px;
+    height: 150px;
+  }
+  h4 {
+    margin-bottom: 16px;
+  }
+  ul {
+    a {
+      font-weight: 500;
+    }
+  }
+}
+@include breakpoint-up(medium) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
